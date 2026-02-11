@@ -15,24 +15,7 @@
 // }, 4000);
 
 
-// setInterval(() => {
-    // console.log("First");     // to stop it press ctrl+C to stop code which is running continously
-// }, 2000);
-
-
-function roll(num, next){
-    setTimeout(() => {
-        console.log("Roll. no. is " + num);
-        if(next) next();
-    }, 2000)
-}
-roll(12212, () => {
-    console.log("Wait its getting downloaded");
-    roll(12312, () => {
-        console.log("Wait its getting downloaded");
-        roll(12412, () => {
-            console.log("Wait its almost over");
-            roll(12512);
-        });
-    });
-});
+setInterval(() => {
+    console.log("First");
+}, 2000);
+clearInterval(id);
